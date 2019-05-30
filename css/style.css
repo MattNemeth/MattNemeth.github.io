@@ -1,10 +1,11 @@
 /*Entire Website*/
-*{
-
+* {
+	margin: 0;
+	padding: 0;
 }
 
 /*Entire Body*/
-body{
+body {
   background: #2b2b2b;
 }
 
@@ -50,26 +51,35 @@ body{
 }
 
 /*H1 Specific*/
-.home {
+#home {
   color: white;
   margin: 20px;
   padding: 20px;
 }
 
-.about {
+#about {
   color: white;
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
 }
 
-.skills {
+#skills {
   color: white;
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
 }
 
-.experience {
+#experience {
   color: white;
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
+}
+
+#contact {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 1200px) {
+
 }
