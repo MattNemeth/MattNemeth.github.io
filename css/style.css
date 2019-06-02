@@ -43,7 +43,8 @@ a:hover {
 }
 
 #navbar ul {
-	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	list-style: none;
 	float: right;
 }
@@ -59,6 +60,10 @@ a:hover {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
+}
+
+#navbar a:hover {
+	color: #333;
 }
 
 #home {
@@ -82,6 +87,43 @@ a:hover {
 	align: middle;
 }
 
+.homeText {
+	background-color: #444;
+	padding: 10px;
+}
+
+.sectionHeader {
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-bottom: solid 2px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.miniSectionHeader {
+	border-bottom: solid 2px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.miniSectionProjects {
+	background-color: #e2e2e2;
+	padding: 10px;
+}
+
+.miniSectionExp {
+	background-color: #444;
+	padding: 10px;
+}
+
+.miniSectionContact {
+	background-color: #e2e2e2;
+	padding: 10px;
+}
+
 #about {
   color: white;
   margin: 0px;
@@ -90,11 +132,15 @@ a:hover {
   background-color: #db0000;
 }
 
-#skills {
+#projects {
   color: #333;
   margin: 0px;
   padding: 20px;
   background-color: #fff;
+}
+
+#projects h1 {
+	text-align: center;
 }
 
 #experience {
@@ -104,6 +150,11 @@ a:hover {
   background-color: #333;
 }
 
+#experience li {
+	margin-left: 40px;
+	padding: 2px;
+}
+
 #contact {
   color: #333;
   margin: 0px;
@@ -111,11 +162,16 @@ a:hover {
   background-color: #fff;
 }
 
+.contactDiv {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+	
 #footer {
-	height: 50px;
 	width: 100%;
-	background-color: #111;
-	margin-top: 50px;
+	padding: 15px;
+	background-color: #222;
 	text-align: center;
 	color: #fff;
 }
