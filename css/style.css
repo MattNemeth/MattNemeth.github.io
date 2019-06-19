@@ -110,6 +110,7 @@ a:hover {
 	border-bottom: solid 2px;
 	text-align: center;
 	margin-bottom: 20px;
+	font-size: 38px;
 }
 
 .miniSectionHeader {
@@ -118,6 +119,7 @@ a:hover {
 	margin-bottom: 20px;
 	text-align: center;
 	width: 100%;
+	font-size: 20px;
 }
 
 .miniSectionProjects {
@@ -185,6 +187,14 @@ a:hover {
 .miniSectionContact {
 	background-color: #e2e2e2;
 	padding: 10px;
+}
+
+.miniSectionContact h3 {
+	font-size: 32px;
+}
+
+.miniSectionContact h4 {
+	font-size: 28px;
 }
 
 #about {
