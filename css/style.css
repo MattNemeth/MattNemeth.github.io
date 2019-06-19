@@ -19,10 +19,14 @@ a:hover {
 }
 
 .container {
-	width: 80%;
+	width: 70%;
 	margin: auto;
 	padding: 0;
 	overflow: hidden;
+}
+
+.normalP {
+	padding: 15px 30px;
 }
 
 #mainHeader {
@@ -83,7 +87,6 @@ a:hover {
 
 .homeText {
 	background-color: #333;
-	padding: 10px;
 	width: 50%;
 	margin: auto;
 }
@@ -119,7 +122,7 @@ a:hover {
 
 .miniSectionProjects {
 	background-color: #e2e2e2;
-	padding: 10px;
+	padding: 15px 30px;
 }
 
 .miniSectionProjects #GUIimg {
@@ -131,6 +134,7 @@ a:hover {
 	padding-right: 10%;
 	box-sizing: border-box;
 }
+
 .miniSectionProjects #GUIimg img {
 	width: 100%;
 	margin: auto;
@@ -138,18 +142,43 @@ a:hover {
 	box-sizing: border-box;
 }
 
-.miniSectionProjects p {
+.miniSectionProjects #calImg {
+	margin: auto;
+	width: 80%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	box-sizing: border-box;
+}
+
+.miniSectionProjects #calImg img {
+	width: 100%;
+	margin: auto;
+	border: 4px #333 solid;
+	box-sizing: border-box;
+}
+
+.miniSectionProjects h2 {
+	font-size: 36px;
+	padding-bottom: 15px;
+}
+
+.miniSectionProjects p {
+	padding-bottom: 10px;
+
 }
 
 .miniSectionExp {
 	background-color: #444;
-	padding: 10px;
+	padding: 15px 30px;
 }
 
 .miniSectionExp p {
-	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.miniSectionExp h2 {
 	padding-bottom: 10px;
 }
 
@@ -187,7 +216,6 @@ a:hover {
 #experience li {
 	margin-left: 40px;
 	padding: 2px;
-	padding-bottom: 15px;
 }
 
 #contact {
@@ -217,4 +245,3 @@ a:hover {
 @media screen and (max-width: 1200px) {
 
 }
-
