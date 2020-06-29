@@ -7,72 +7,79 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="description" content="My ePortfolio">
-        <meta name="author" content="Matt Nemeth">
-
         <link rel="stylesheet" href="css/style.css">
     </head>
 
 
     <body>
 
-        <div class ="grid">
+        <div class ="grid-container">
 
+            <!--Title Section-->
             <div class="title">
-                <h1>MN</h1>
-            </div>
-
-
-            <div class="header">
-                <ul class="headerList">
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-
-
-            <div class="content">Content
-
-                <!-- Picture Div -->
-                <div>
-                    <div>
-                        <img src="img/MN.png" alt="MN Logo">
-                        <p>Can put the image in this section then format with CSS.<p>
+                <div class="grid-item">
+                    <div class="container">
+                        <div id="img_mn">
+                            <img src="img/MN.png" alt="MN Logo">
+                        </div>
                     </div>
                 </div>
+            </div><!--End Title Section-->
 
-                <p></p>
 
-                <!-- Contact Items div -->
-                <div>
+            <!--Navbar Section-->
+            <div class="header">
+                <div class="grid-item">
+                    <div class="container">
+                        <div class="main-nav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Projects</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--End Navbar Section-->
 
-                    <li>
-                        <p>
-                            Github
-                            <a href="#">Github Link </a>     
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            LinkedIn
-                            <a href="#">LinkedIn Link </a> 
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Email
-                            <a href="#">Email Link </a> 
-                        </p>
-                    </li>
+
+            <div class="content">
+                <div class="grid-item">
+                    <div class="container">
+                        <div class="contact-nav">
+                            <ul>
+                                <li>
+                                    <p>
+                                        Github
+                                        <a href="#">Github Link </a>     
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        LinkedIn
+                                        <a href="#">LinkedIn Link </a> 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Email
+                                        <a href="#">Email Link </a> 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--content ends-->
+
+            <div class="footer">
+                <div class="grid-item">
+                    <div class="container">
+                        <p>Matt Nemeth &copy; 2020</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="footer">Footer
-                <p>&copy; Matt Nemeth 2020</p>
-            </div>
-
-        </div>
+        </div><!--End Grid-->
     </body>
 </html>
 
