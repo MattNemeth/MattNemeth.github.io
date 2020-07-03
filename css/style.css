@@ -47,7 +47,7 @@ table {
 /*End Meyerweb reset*/
 
 :root {
-    --primary: #BBB;
+    --primary: #3d3d3d;
     --dark: #111;
     --light: #EEE;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -60,7 +60,7 @@ html {
 }
 
 body {
-    background: #ccc;
+    background-color: var(--primary);
     margin: 0rem 0rem;
     line-height: 1.4;
 }
@@ -69,50 +69,63 @@ img {
     max-width: 100%;
 }
 
+/* For Screens < 736px */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 10px;
     grid-column-gap: 5px;
     grid-template-areas:
-    'title title'
-    'header header'
+    'title  title'
+    'header  header'
     'content content'
-    'footer footer';
+    'footer  footer';
 }
 
 .grid-item {
     border-style: solid;
     border-width: 5px;
-    border-color: #FF0000;
+    border-color: #CCC;
 }
 
 .title {
     grid-area: title;
-    background-color: #444;
-    position: fixed;
-    top: 0;
+    background-color: var(--dark);
     width: 100%;
 }
 
 .header {
     grid-area: header;
-    background-color: #999;
     text-align: center;
-    margin-top: 4rem;
-    color: #EEE;
-    background-color: #2a2a2a;
+    /*margin-top: 4rem;*/
+    color: var(--light);
+    background-image: url("../img/mountains.jpg");
+    background-size: cover;
 }
 
 .header h1 {
     font-size: 10rem;
     padding-top: 10rem;
-    text-shadow: 2px 2px 5px #111;
+    text-shadow: 5px 5px 5px #111;
 }
 
 .header p {
     font-size: 2rem;
     text-shadow: 2px 2px 2px #111;
+}
+
+.header button {
+    margin: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: var(--light);
+    background-color: var(--primary);
+}
+
+.header button:hover {
+    color: var(--primary);
+    background-color: var(--light);
 }
 
 .content {
@@ -122,7 +135,7 @@ img {
 
 .footer {
     grid-area: footer;
-    background-color: #EEE;
+    background-color: var(--light);
     text-align: center;
 }
 
@@ -148,7 +161,7 @@ img {
 .main-nav ul {
     display: grid;
     padding: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 }
 
@@ -159,12 +172,18 @@ img {
     text-decoration: none;
     padding: 0.5rem;
     text-align: center;
-    color: var(--dark);
+    color: var(--light);
     text-transform: uppercase;
     font-size: 1.1rem;
     box-shadow: var(--shadow);
     box-sizing: border-box;
+    border-radius: 8px;
 }
+
+.main-nav a:hover {
+    color: #EEE;
+    background-color: #2a2a2a;
+} 
 
 .contact-nav {
     text-align: center;
@@ -194,8 +213,7 @@ img {
 {
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-ros: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-areas:
         "title title"
