@@ -72,13 +72,13 @@ img {
 /* For Screens < 736px */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    'logo logo'
-    'title  title'
-    'header  header'
-    'content content'
-    'footer  footer';
+    '. logo .'
+    'title  title title'
+    'header  header header'
+    'content content content'
+    'footer  footer footer';
 }
 
 .grid-item {
