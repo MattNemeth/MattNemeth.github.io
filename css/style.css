@@ -74,9 +74,8 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    '. logo .'
-    'title  title title'
-    'header  header header'
+    'main-nav main-nav main-nav'
+    'lp-content lp-content lp-content'
     'content content content'
     'footer  footer footer';
 }
@@ -89,27 +88,42 @@ img {
     */
 }
 
-.logo {
-    grid-area: logo;
-    background-color: var(--dark);
-    width: 85px;
-    height: 69px;
-}
-
-.logo img {
-    width: 100%;
-    height: auto;
-    border-radius: 20%;
-}
-
-.title {
-    grid-area: title;
+.main-nav {
+    grid-area: main-nav;
     background-color: var(--dark);
     width: 100%;
 }
 
-.header {
-    grid-area: header;
+.main-nav ul {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.main-nav a {
+    width: 100%;
+    background: var(--dark);
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--light);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.main-nav a:hover {
+    color: var(--light);
+    border-bottom: 3px solid var(--light);
+    transition: all 0.1s ease-in-out;
+} 
+
+.lp-content {
+    grid-area: lp-content;
     text-align: center;
     /*margin-top: 4rem;*/
     color: var(--light);
@@ -117,18 +131,18 @@ img {
     background-size: cover;
 }
 
-.header h1 {
-    font-size: 8rem;
+.lp-content h1 {
+    font-size: 5rem;
     padding-top: 10rem;
     text-shadow: 5px 5px 5px #111;
 }
 
-.header p {
+.lp-content p {
     font-size: 2rem;
     text-shadow: 2px 2px 2px #111;
 }
 
-.header button {
+.lp-content button {
     margin: 5rem;
     font-size: 2rem;
     text-transform: uppercase;
@@ -138,9 +152,10 @@ img {
     background-color: var(--dark);
 }
 
-.header button:hover {
+.lp-content button:hover {
     color: var(--light);
     background-color: var(--primary);
+    transition: 0.2s;
 }
 
 .content {
@@ -170,36 +185,17 @@ img {
 
 
 
-.main-nav {
-}
 
-.main-nav ul {
-    display: grid;
-    padding: 0;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-    margin-top: 1rem;
-}
 
-.main-nav a {
-    width: 100%;
-    background: var(--dark);
-    text-decoration: none;
-    padding: 0.5rem;
-    text-align: center;
-    color: var(--light);
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: none;
-    box-sizing: border-box;
-}
 
-.main-nav a:hover {
-    color: var(--light);
-    border-bottom: 3px solid var(--light);
-    transition: all 0.1s ease-in-out;
-} 
+
+
+
+
+
+
+
+
 
 .contact-nav {
     text-align: center;
@@ -232,10 +228,15 @@ img {
         background-color: var(--dark); 
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-        "logo    title  . "
-        "header  header  header"
+        ". main-nav ."
+        "lp-content lp-content lp-content"
         "content content content"
         "footer  footer  footer";
+    }
+
+
+    .lp-content h1 {
+        font-size: 8rem;
     }
 }
 
