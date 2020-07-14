@@ -98,6 +98,8 @@ img {
 /*Main Navbar*/
 
 .main-nav {
+    position:         fixed;
+    top:              0;
     width:            100%;
     grid-area:        main-nav;
     background-color: var(--dark);
@@ -131,10 +133,16 @@ img {
     transition:    all 0.1s ease-in-out;
 } 
 
+.main-nav a:active {
+    color:         var(--light);
+    border-bottom: 3px solid var(--light);
+}
+
 
 /* Landing Page Content */
 
 .landing-content {
+    margin-top:       2rem;
     grid-area:        landing-content;
     text-align:       center;
     color:            var(--light);
