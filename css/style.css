@@ -119,7 +119,7 @@ img {
     text-align:      center;
     color:           var(--light);
     text-transform:  uppercase;
-    font-size:       1rem;
+    font-size:       0.8rem;
     font-weight:     bold;
     box-shadow:      none;
     box-sizing:      border-box;
@@ -195,6 +195,10 @@ img {
     text-align:       center;
 }
 
+.footer p {
+    font-size: 1rem;
+    margin:    1rem;
+}
 
 
 
@@ -265,8 +269,12 @@ img {
         grid-gap: 1rem;
     }
 
+    .main-nav a {
+        font-size: 1rem;
+    }
+
     .landing-content h1 {
-        font-size: 7rem;
+        font-size:   7rem;
         padding-top: 7rem;
     }
 
