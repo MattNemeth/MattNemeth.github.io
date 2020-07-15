@@ -273,6 +273,10 @@ img {
         font-size: 0.8rem;
     }
 
+    .landing-content h1 {
+        font-size:   5rem;
+    }
+
 }
 
 @media screen and (min-width: 768px)
