@@ -144,7 +144,7 @@ img {
     grid-area:        landing-content;
     text-align:       center;
     color:            var(--light);
-    background-image: url("../img/mountains.jpg");
+    background-image: url("../img/foggyCliffBnW3.png");
     background-size:  cover;
 }
 
@@ -307,7 +307,9 @@ img {
         font-size: 2rem;
     }
 
-
+    .landing-content button {
+        font-size: 2rem;
+    }
 
 }
 
