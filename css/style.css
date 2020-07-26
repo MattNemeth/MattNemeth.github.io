@@ -73,22 +73,23 @@ img {
     max-width: 100%;
 }
 
-/* For Screens < 736px */
+/* For Screens < 768px */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    'main-nav        main-nav        main-nav'
     'landing-content landing-content landing-content'
     'content         content         content'
     'footer          footer          footer';
 }
 
+/*
 .grid-item {
     border-style: solid;
     border-width: 5px;
     border-color: #000FFF;
 }
+*/
 
 
 
@@ -96,16 +97,17 @@ img {
 /*Main Navbar*/
 
 .main-nav {
+    position:         fixed;
+    top:              0;
     width:            100%;
-    grid-area:        main-nav;
     background-color: var(--dark);
 }
 
 .main-nav ul {
-    display:    grid;
-    padding:    1.5rem;
-    text-align: center;
-    grid-gap:   1rem;
+    display:               grid;
+    padding:               1.5rem;
+    text-align:            center;
+    grid-gap:              1rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -117,7 +119,7 @@ img {
     text-align:      center;
     color:           var(--light);
     text-transform:  uppercase;
-    font-size:       1rem;
+    font-size:       0.6rem;
     font-weight:     bold;
     box-shadow:      none;
     box-sizing:      border-box;
@@ -129,31 +131,37 @@ img {
     transition:    all 0.1s ease-in-out;
 } 
 
+.main-nav a:active {
+    color:         var(--light);
+    border-bottom: 3px solid var(--light);
+}
+
 
 /* Landing Page Content */
 
 .landing-content {
+    margin-top:       2rem;
     grid-area:        landing-content;
     text-align:       center;
     color:            var(--light);
-    background-image: url("../img/mountains.jpg");
+    background-image: url("../img/foggyCliffBnW3.png");
     background-size:  cover;
 }
 
 .landing-content h1 {
-    font-size:   5rem;
-    padding-top: 10rem;
+    font-size:   2rem;
+    padding-top: 3rem;
     text-shadow: 5px 5px 5px #111;
 }
 
 .landing-content p {
-    font-size:   2rem;
+    font-size:   1.25rem;
     text-shadow: 2px 2px 2px #111;
 }
 
 .landing-content button {
     margin:           5rem;
-    font-size:        2rem;
+    font-size:        1.5rem;
     padding:          0.8rem 1.5rem;
     text-transform:   uppercase;
     border-radius:    10px;
@@ -193,6 +201,10 @@ img {
     text-align:       center;
 }
 
+.footer p {
+    font-size: 1rem;
+    margin:    1rem;
+}
 
 
 
@@ -241,7 +253,10 @@ img {
     box-sizing:      border-box;
 }
 
-@media screen and (min-width: 736px)
+
+
+
+@media screen and (min-width: 400px)
 {
     .grid-container {
         display:               grid;
@@ -254,9 +269,51 @@ img {
         "footer  footer  footer";
     }
 
-
-    .lp-content h1 {
-        font-size: 8rem;
+    .main-nav a {
+        font-size: 0.8rem;
     }
+
+    .landing-content h1 {
+        font-size:   5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px)
+{
+    .grid-container {
+        display:               grid;
+        background-color:      var(--dark); 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "landing-content landing-content landing-content"
+        "content content content"
+        "footer  footer  footer";
+    }
+
+
+    .main-nav ul {
+        grid-gap:     1rem;
+        margin-right: 30%;
+        margin-left:  30%;
+    }
+
+    .main-nav a {
+        font-size: 1rem;
+    }
+
+    .landing-content h1 {
+        font-size:   7rem;
+        padding-top: 7rem;
+    }
+
+    .landing-content p {
+        font-size: 2rem;
+    }
+
+    .landing-content button {
+        font-size: 2rem;
+    }
+
 }
 
