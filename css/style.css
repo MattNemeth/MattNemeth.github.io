@@ -79,7 +79,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     'landing-content landing-content landing-content'
-    'content         content         content'
+    'content content content'
     'footer          footer          footer';
 }
 
@@ -145,6 +145,7 @@ img {
     text-align:       center;
     color:            var(--light);
     background-image: url("../img/foggyCliffBnW3.png");
+    background-image: url("../img/sunrise.jpeg");
     background-size:  cover;
 }
 
@@ -255,7 +256,6 @@ img {
 
 
 
-
 @media screen and (min-width: 400px)
 {
     .grid-container {
@@ -263,10 +263,9 @@ img {
         background-color:      var(--dark); 
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-        ". main-nav ."
         "landing-content landing-content landing-content"
         "content content content"
-        "footer  footer  footer";
+        "footer          footer          footer";
     }
 
     .main-nav a {
@@ -288,7 +287,7 @@ img {
         grid-template-areas:
         "landing-content landing-content landing-content"
         "content content content"
-        "footer  footer  footer";
+        "footer          footer          footer";
     }
 
 
