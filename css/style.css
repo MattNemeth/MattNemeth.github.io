@@ -204,7 +204,32 @@ img {
 
 .footer p {
     font-size: 1rem;
+    color:     #777;
     margin:    1rem;
+}
+
+.footer ul {
+    text-align: center;
+    box-sizing: border-box;
+    padding:    1rem;
+}
+
+.footer li {
+    display:    inline;
+    list-style: none;
+    padding:    1rem;
+    font-size:  1rem;
+}
+
+.footer a {
+    color:           var(--dark);
+    font-size:       1rem;
+    text-decoration: none;
+    text-transform:  uppercase;
+}
+
+.footer a:hover {
+    color: #FC6969;
 }
 
 
@@ -253,6 +278,7 @@ img {
     box-shadow:      var(--shadow);
     box-sizing:      border-box;
 }
+
 
 
 
@@ -316,6 +342,10 @@ img {
 
     .landing-content button {
         font-size: 2rem;
+    }
+
+    .landing-content .container {
+        margin-bottom: 6rem;
     }
 
 }
