@@ -256,7 +256,7 @@ img {
 
 
 
-@media screen and (min-width: 400px)
+@media screen and (min-width: 480px)
 {
     .grid-container {
         display:               grid;
@@ -273,12 +273,12 @@ img {
     }
 
     .landing-content h1 {
-        font-size:   5rem;
+        font-size:   3.8rem;
     }
 
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 900px)
 {
     .grid-container {
         display:               grid;
@@ -293,8 +293,8 @@ img {
 
     .main-nav ul {
         grid-gap:     1rem;
-        margin-right: 30%;
-        margin-left:  30%;
+        margin-right: 20%;
+        margin-left:  20%;
     }
 
     .main-nav a {
