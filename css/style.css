@@ -178,7 +178,27 @@ img {
 }
 
 
+/* About Me Content */
 
+.about-me-content {
+    margin-top:       2rem;
+    grid-area:        landing-content;
+    text-align:       center;
+    color:            var(--light);
+    background-image: url("../img/foggyCliffBnW3.png");
+    background-size:  cover;
+}
+
+.about-me-content h1 {
+    font-size:   2rem;
+    padding-top: 3rem;
+    text-shadow: 5px 5px 5px #111;
+}
+
+.about-me-content p {
+    font-size:   1.25rem;
+    text-shadow: 2px 2px 2px #111;
+}
 
 
 
