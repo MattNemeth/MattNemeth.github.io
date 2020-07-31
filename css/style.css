@@ -79,7 +79,8 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     'landing-content landing-content landing-content'
-    'content content content'
+    'about-me        about-me        about-me'
+    'content         content         content'
     'footer          footer          footer';
 }
 
@@ -179,6 +180,21 @@ img {
 
 
 /* About Me Content */
+
+.about-me {
+    grid-area:        about-me;
+    text-align:       center;
+    color:            var(--light);
+}
+
+.about-me h1 {
+    font-size:   2rem;
+    padding-top: 3rem;
+}
+
+.about-me p {
+    font-size:   1.25rem;
+}
 
 .about-me-content {
     margin-top:       2rem;
@@ -310,7 +326,8 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "landing-content landing-content landing-content"
-        "content content content"
+        "about-me        about-me        about-me"
+        "content         content         content"
         "footer          footer          footer";
     }
 
