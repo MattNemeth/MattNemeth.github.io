@@ -79,7 +79,9 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     'landing-content landing-content landing-content'
-    'content content content'
+    'about-me        about-me        about-me'
+    'projects        projects        projects'
+    'content         content         content'
     'footer          footer          footer';
 }
 
@@ -147,6 +149,7 @@ img {
     background-image: url("../img/foggyCliffBnW3.png");
     background-image: url("../img/sunrise.jpeg");
     background-size:  cover;
+    height:           95vh;
 }
 
 .landing-content h1 {
@@ -160,26 +163,31 @@ img {
     text-shadow: 2px 2px 2px #111;
 }
 
-.landing-content button {
-    margin:           5rem;
-    font-size:        1rem;
-    padding:          0.8rem 1.5rem;
-    text-transform:   uppercase;
-    border-radius:    10px;
+
+/* About Me Section */
+
+.about-me {
+    grid-area:        about-me;
+    text-align:       center;
     color:            var(--light);
-    border-color:     var(--light);
     background-color: var(--dark);
 }
 
-.landing-content button:hover {
-    color:            var(--light);
-    background-color: var(--primary);
-    transition:       0.2s;
+.about-me h1 {
+    font-size:   2rem;
 }
 
+.about-me p {
+    font-size:   0.8rem;
+}
 
+/* Projects Section */
 
-
+.projects {
+    grid-area: projects;
+    text-align: center;
+    color: var(--light);
+}
 
 
 /* Content will be renamed */
@@ -198,13 +206,38 @@ img {
 
 .footer {
     grid-area:        footer;
-    background-color: var(--light);
+    background-color: var(--dark);
     text-align:       center;
 }
 
 .footer p {
     font-size: 1rem;
+    color:     #777;
     margin:    1rem;
+}
+
+.footer ul {
+    text-align: center;
+    box-sizing: border-box;
+    padding:    1rem;
+}
+
+.footer li {
+    display:    inline;
+    list-style: none;
+    padding:    1rem;
+    font-size:  1rem;
+}
+
+.footer a {
+    color:           var(--light);
+    font-size:       1rem;
+    text-decoration: none;
+    text-transform:  uppercase;
+}
+
+.footer a:hover {
+    color: #FC6969;
 }
 
 
@@ -214,7 +247,7 @@ img {
 .container {
     width:      100%;
     height:     auto;
-    padding:    0.5rem 0.8rem;
+    padding:    0.5rem 20%;
     box-sizing: border-box;
 }
 
@@ -256,6 +289,7 @@ img {
 
 
 
+
 @media screen and (min-width: 480px)
 {
     .grid-container {
@@ -264,6 +298,8 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "landing-content landing-content landing-content"
+        'about-me        about-me        about-me'
+        'projects        projects        projects'
         "content content content"
         "footer          footer          footer";
     }
@@ -275,11 +311,6 @@ img {
     .landing-content h1 {
         font-size:   3.8rem;
     }
-
-    .landing-content button {
-        font-size: 1.5rem;
-    }
-
 }
 
 @media screen and (min-width: 900px)
@@ -290,10 +321,11 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "landing-content landing-content landing-content"
-        "content content content"
+        "about-me        about-me        about-me"
+        'projects        projects        projects'
+        "content         content         content"
         "footer          footer          footer";
     }
-
 
     .main-nav ul {
         grid-gap:     1rem;
@@ -313,10 +345,5 @@ img {
     .landing-content p {
         font-size: 2rem;
     }
-
-    .landing-content button {
-        font-size: 2rem;
-    }
-
 }
 
