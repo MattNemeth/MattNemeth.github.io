@@ -206,7 +206,7 @@ img {
 
 .footer {
     grid-area:        footer;
-    background-color: var(--light);
+    background-color: var(--dark);
     text-align:       center;
 }
 
@@ -230,7 +230,7 @@ img {
 }
 
 .footer a {
-    color:           var(--dark);
+    color:           var(--light);
     font-size:       1rem;
     text-decoration: none;
     text-transform:  uppercase;
