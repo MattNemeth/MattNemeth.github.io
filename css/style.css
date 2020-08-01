@@ -80,6 +80,7 @@ img {
     grid-template-areas:
     'landing-content landing-content landing-content'
     'about-me        about-me        about-me'
+    'projects        projects        projects'
     'content         content         content'
     'footer          footer          footer';
 }
@@ -148,6 +149,7 @@ img {
     background-image: url("../img/foggyCliffBnW3.png");
     background-image: url("../img/sunrise.jpeg");
     background-size:  cover;
+    height:           95vh;
 }
 
 .landing-content h1 {
@@ -161,61 +163,31 @@ img {
     text-shadow: 2px 2px 2px #111;
 }
 
-.landing-content button {
-    margin:           5rem;
-    font-size:        1rem;
-    padding:          0.8rem 1.5rem;
-    text-transform:   uppercase;
-    border-radius:    10px;
-    color:            var(--light);
-    border-color:     var(--light);
-    background-color: var(--dark);
-}
 
-.landing-content button:hover {
-    color:            var(--light);
-    background-color: var(--primary);
-    transition:       0.2s;
-}
-
-
-/* About Me Content */
+/* About Me Section */
 
 .about-me {
     grid-area:        about-me;
     text-align:       center;
     color:            var(--light);
+    background-color: var(--dark);
 }
 
 .about-me h1 {
     font-size:   2rem;
-    padding-top: 3rem;
 }
 
 .about-me p {
-    font-size:   1.25rem;
+    font-size:   0.8rem;
 }
 
-.about-me-content {
-    margin-top:       2rem;
-    grid-area:        landing-content;
-    text-align:       center;
-    color:            var(--light);
-    background-image: url("../img/foggyCliffBnW3.png");
-    background-size:  cover;
-}
+/* Projects Section */
 
-.about-me-content h1 {
-    font-size:   2rem;
-    padding-top: 3rem;
-    text-shadow: 5px 5px 5px #111;
+.projects {
+    grid-area: projects;
+    text-align: center;
+    color: var(--light);
 }
-
-.about-me-content p {
-    font-size:   1.25rem;
-    text-shadow: 2px 2px 2px #111;
-}
-
 
 
 /* Content will be renamed */
@@ -250,7 +222,7 @@ img {
 .container {
     width:      100%;
     height:     auto;
-    padding:    0.5rem 0.8rem;
+    padding:    0.5rem 20%;
     box-sizing: border-box;
 }
 
@@ -300,6 +272,8 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "landing-content landing-content landing-content"
+        'about-me        about-me        about-me'
+        'projects        projects        projects'
         "content content content"
         "footer          footer          footer";
     }
@@ -311,11 +285,6 @@ img {
     .landing-content h1 {
         font-size:   3.8rem;
     }
-
-    .landing-content button {
-        font-size: 1.5rem;
-    }
-
 }
 
 @media screen and (min-width: 900px)
@@ -327,10 +296,10 @@ img {
         grid-template-areas:
         "landing-content landing-content landing-content"
         "about-me        about-me        about-me"
+        'projects        projects        projects'
         "content         content         content"
         "footer          footer          footer";
     }
-
 
     .main-nav ul {
         grid-gap:     1rem;
@@ -350,10 +319,5 @@ img {
     .landing-content p {
         font-size: 2rem;
     }
-
-    .landing-content button {
-        font-size: 2rem;
-    }
-
 }
 
