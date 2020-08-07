@@ -54,7 +54,7 @@ table {
 :root {
     --primary: #3d3d3d;
     --dark:    #111;
-    --light:   #EEE;
+    --light:   #FFF;
 }
 
 html {
@@ -72,6 +72,18 @@ body {
 img {
     max-width: 100%;
 }
+
+
+
+/* Generic Containers */
+
+.container {
+    width:      100%;
+    height:     auto;
+    padding:    0.5rem 20%;
+    box-sizing: border-box;
+}
+
 
 /* For Screens < 768px */
 .grid-container {
@@ -146,15 +158,14 @@ img {
     grid-area:        landing-content;
     text-align:       center;
     color:            var(--light);
-    background-image: url("../img/foggyCliffBnW3.png");
-    background-image: url("../img/sunrise.jpeg");
+    background-image: url("../img/sunset-mountains.jpg");
     background-size:  cover;
-    height:           95vh;
+    height:           94vh;
 }
 
 .landing-content h1 {
-    font-size:   2rem;
-    padding-top: 3rem;
+    font-size:   3rem;
+    padding-top: 5rem;
     text-shadow: 5px 5px 5px #111;
 }
 
@@ -185,17 +196,73 @@ img {
 
 .projects {
     grid-area: projects;
+    background-color: #ef8040;
     text-align: center;
     color: var(--light);
 }
+
+.projects h1 {
+    font-size: 2rem;
+}
+
+
+/* Project Grid Section */
+
+.project-grid {
+    display: grid;
+    grid-gap: 1rem;
+    padding:  1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.project-card {
+    background-color: var(--primary);
+    border-color: var(--light);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
 
 
 /* Content will be renamed */
 
 .content {
     grid-area:        content;
-    background-color: #BBB;
+    background-color: #FFF;
 }
+
+.content a {
+    background-color: #DDD;
+}
+
+
+/* Contact Navbar */
+
+.contact-nav {
+    text-align: center;
+}
+
+.contact-nav ul {
+    display:  grid;
+    grid-gap: 1.5rem;
+    padding:  0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-nav a {
+    width:           100%;
+    background:      #FFF;
+    display:         block;
+    text-decoration: none;
+    padding:         0.5rem;
+    color:           #111;
+    text-transform:  uppercase;
+    font-size:       1.1rem;
+    box-shadow:      var(--shadow);
+    box-sizing:      border-box;
+}
+
 
 
 
@@ -216,79 +283,41 @@ img {
     margin:    1rem;
 }
 
-.footer ul {
-    text-align: center;
-    box-sizing: border-box;
-    padding:    1rem;
+
+/* Footer Links */
+
+.footer-links {
+    width:            100%;
+    background-color: var(--dark);
 }
 
-.footer li {
-    display:    inline;
-    list-style: none;
-    padding:    1rem;
-    font-size:  1rem;
+.footer-links ul {
+    display:               grid;
+    padding:               1rem;
+    text-align:            center;
+    grid-gap:              1rem;
+    grid-template-columns: 1fr;
 }
 
-.footer a {
-    color:           var(--light);
-    font-size:       1rem;
-    text-decoration: none;
-    text-transform:  uppercase;
-}
-
-.footer a:hover {
-    color: #FC6969;
-}
-
-
-
-/* Generic Containers */
-
-.container {
-    width:      100%;
-    height:     auto;
-    padding:    0.5rem 20%;
-    box-sizing: border-box;
-}
-
-.container img {
-    width:      100%;
-    padding:    0;
-    box-sizing: border-box;
-}
-
-
-
-
-
-/* Contact Navbar */
-
-.contact-nav {
-    text-align: center;
-}
-
-.contact-nav ul {
-    display:  grid;
-    grid-gap: 1.5rem;
-    padding:  0;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.contact-nav a {
+.footer-links a {
     width:           100%;
-    background:      var(--primary);
-    display:         block;
+    background:      var(--dark);
     text-decoration: none;
     padding:         0.5rem;
-    color:           var(--dark);
+    text-align:      center;
+    color:           var(--light);
     text-transform:  uppercase;
-    font-size:       1.1rem;
-    box-shadow:      var(--shadow);
+    font-size:       1rem;
+    font-weight:     bold;
+    box-shadow:      none;
     box-sizing:      border-box;
 }
 
 
 
+
+
+/* ignoring this screen size for now. Adds unnecessary complication at this stage in the project
 
 @media screen and (min-width: 480px)
 {
@@ -300,7 +329,7 @@ img {
         "landing-content landing-content landing-content"
         'about-me        about-me        about-me'
         'projects        projects        projects'
-        "content content content"
+        "content         content         content"
         "footer          footer          footer";
     }
 
@@ -312,6 +341,11 @@ img {
         font-size:   3.8rem;
     }
 }
+
+*/
+
+
+
 
 @media screen and (min-width: 900px)
 {
@@ -344,6 +378,14 @@ img {
 
     .landing-content p {
         font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-links ul {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

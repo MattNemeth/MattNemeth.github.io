@@ -15,6 +15,7 @@
         <div class ="grid-container">
 
             <!--main-nav Section-->
+            <!-- For phone screens I'd like the navbar to become a centered picture and then have a dropdown-->
             <div class="main-nav">
                 <div class="grid-item">
                     <ul>
@@ -58,14 +59,41 @@
             <div class="projects">
                 <div class="grid-item">
                     <div class="container">
+
                         <h1>Projects</h1>
                         <p>Best way to display would be with "cards" short snippets/overviews of projects.
                            then maybe make pages dedicated to those projects.
                         </p>
+
+                        <div class="project-grid"> 
+
+                            <div class="project-card">
+                                <h1>LED MLB Baseball</h1>
+                                <p>I wrote a Python web scraper that runs on a Raspberry Pi 0 that grabs information about the Cleveland Indians MLB games
+                                   as they are playing and updates the field in real time
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+
+                            <div class="project-card">
+                                <h1>This Website</h1>
+                                <p>This website is being hosted by github pages. Feel free to checkout the source code.
+                                </p>
+                                <button>Learn More</button>
+                            </div>
+
+                            <div class="project-card">
+                                <h1>GE Tracker</h1>
+                                <p>This is a project card
+                                </p>
+                                <button>More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div><!--End About Me-->
 
+            <!--Contact Nav Section-->
             <div class="content">
                 <div class="grid-item">
                     <div class="container">
@@ -75,7 +103,7 @@
                                     <p>
                                         Github
                                         <a href="#">
-                                            <img src="img/github-logo.png" alt="GitHub">     
+                                            <img src="img/github-logo-128px.png" alt="GitHub">     
                                         </a>     
                                     </p>
                                 </li>
@@ -83,7 +111,7 @@
                                     <p>
                                         LinkedIn
                                         <a href="#">
-                                            <img src="img/linkedin-logo.png" alt="LinkedIn">
+                                            <img src="img/linkedin-logo-128px.png" alt="LinkedIn">
                                         </a> 
                                     </p>
                                 </li>
@@ -91,7 +119,7 @@
                                     <p>
                                         Email
                                         <a href="#">
-                                            <img src="img/email-logo.png" alt="Email">
+                                            <img src="img/email-logo-128px.png" alt="Email">
                                         </a> 
                                     </p>
                                 </li>
@@ -108,21 +136,23 @@
             <div class="footer">
                 <div class="grid-item">
                     <div class="container">
-                        <p>Put MN logo here which means footer will need to be dark like navbar</p>
+                        <div class="footer-links">
+                            <p>Put MN logo here which means footer will need to be dark like navbar</p>
 
-                        <ul id="footer-list">
-                            <li>
-                                <a href="https://www.linkedin.com/in/matthewjnemeth/" target="_blank">LinkedIn</a>
-                            </li>
-                            <li>
-                                <a href="#">Email</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/MattNemeth" target="_blank">GitHub</a>
-                            </li>
-                        </ul>
+                            <ul id="footer-list">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/matthewjnemeth/" target="_blank">LinkedIn</a>
+                                </li>
+                                <li>
+                                    <a href="#">Email</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/MattNemeth" target="_blank">GitHub</a>
+                                </li>
+                            </ul>
 
-                        <p>Matt Nemeth &copy; 2020</p>
+                            <p>Matt Nemeth &copy; 2020</p>
+                        </div>
                     </div>
                 </div>
             </div>
