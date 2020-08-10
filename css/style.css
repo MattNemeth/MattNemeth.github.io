@@ -84,6 +84,16 @@ img {
     box-sizing: border-box;
 }
 
+.container h1 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.container p {
+    font-size:      1.125rem;
+    padding-bottom: 1.5rem;
+}
+
 
 /* For Screens < 768px */
 .grid-container {
@@ -170,7 +180,8 @@ img {
 }
 
 .landing-content p {
-    font-size:   1.25rem;
+    font-size:   1.125rem;
+    padding-top: 0.5rem;
     text-shadow: 2px 2px 2px #111;
 }
 
@@ -303,6 +314,10 @@ img {
     box-sizing:      border-box;
 }
 
+.contact-nav img {
+    height: 128px;
+    width:  128px;
+}
 
 
 /* Footer Section */
