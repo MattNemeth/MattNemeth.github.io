@@ -80,7 +80,7 @@ img {
 .container {
     width:      100%;
     height:     auto;
-    padding:    0.5rem 20%;
+    padding:    0.5rem 15%;
     box-sizing: border-box;
 }
 
@@ -185,26 +185,48 @@ img {
 }
 
 .about-me h1 {
-    font-size:   2rem;
+    font-size: 2rem;
+    padding:   1.5rem;
 }
 
 .about-me p {
-    font-size:   0.8rem;
+    font-size:      1.125rem;
+    padding-bottom: 1.5rem;
 }
+
+#head-shot {
+    height:         128px;
+    width:          128px;
+    display:        block;
+    margin-left:    auto;
+    margin-right:   auto;
+    text-align:     center;
+    padding-bottom: 2rem;
+}
+
+#head-shot img {
+    border-radius: 50%;
+}
+
+
 
 /* Projects Section */
 
 .projects {
-    grid-area: projects;
-    background-color: #ef8040;
-    text-align: center;
-    color: var(--light);
+    grid-area:        projects;
+    background-color: #FF9900;
+    text-align:       center;
+    color:            var(--light);
 }
 
 .projects h1 {
     font-size: 2rem;
+    padding:   1.5rem;
 }
 
+.projects p {
+    font-size: 1.125rem;
+}
 
 /* Project Grid Section */
 
@@ -217,10 +239,19 @@ img {
 
 .project-card {
     background-color: var(--primary);
-    border-color: var(--light);
+    border-color: var(--dark);
     border-width: 5px;
     border-style: solid;
     border-radius: 10px;
+}
+
+.project-card h1 {
+    font-size: 1.5rem;
+    padding:   0.5rem;
+}
+
+.project-card p {
+    padding: 0.5rem 1rem;
 }
 
 
@@ -230,10 +261,19 @@ img {
 .content {
     grid-area:        content;
     background-color: #FFF;
+    text-align:       center;
 }
 
 .content a {
     background-color: #DDD;
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1.125rem;
 }
 
 
@@ -262,10 +302,6 @@ img {
     box-shadow:      var(--shadow);
     box-sizing:      border-box;
 }
-
-
-
-
 
 
 
@@ -313,7 +349,9 @@ img {
     box-sizing:      border-box;
 }
 
-
+.footer-links a:hover {
+    color: #FF9900;
+}
 
 
 
