@@ -443,9 +443,5 @@ img {
     .project-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .footer-links ul {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
