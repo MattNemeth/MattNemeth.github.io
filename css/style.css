@@ -229,13 +229,18 @@ img {
     background-color: var(--dark);
     text-align:       center;
     border-top:       2px;
-    border-color:     #CCC;
+    border-color:     #222;
     border-style:     solid;
 }
 
 .projects h1 {
     font-size: 2rem;
     padding:   1.5rem;
+}
+
+.projects h2 {
+    font-size: 1.75rem;
+    padding:   1rem;
 }
 
 .projects p {
@@ -276,7 +281,7 @@ img {
     background-color: var(--dark);
     text-align:       center;
     border-top:       2px;
-    border-color:     #CCC;
+    border-color:     #222;
     border-style:     solid;
 }
 
@@ -331,7 +336,7 @@ img {
     background-color: var(--dark);
     text-align:       center;
     border-top:       2px;
-    border-color:     #CCC;
+    border-color:     #222;
     border-style:     solid;
 }
 
