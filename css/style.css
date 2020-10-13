@@ -247,6 +247,19 @@ img {
     font-size: 1.125rem;
 }
 
+.projects a {
+    color: #FF9900;
+    text-decoration: none;
+}
+
+.projects .gh-header {
+    text-align: left;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
 /* Project Grid Section */
 .project-grid {
     display: grid;
