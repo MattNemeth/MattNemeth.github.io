@@ -394,7 +394,7 @@ img {
 }
 
 #myLogo img {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     border-color: #fff;
     border-style: solid;
     border-width: 3px;
