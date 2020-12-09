@@ -406,7 +406,7 @@ img {
     border-radius: 50%;
     height: 69px;
     width: 69px;
-    margin: 1rem;
+    margin-top: 1rem;
     border-color: var(--light);
     border-style: solid;
     border-width: 3px;
